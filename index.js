@@ -79,7 +79,7 @@ modalCloses.forEach((modalClose) => {
 var swiper = new Swiper(".portfolio__container", {
   cssMode: true,
   loop: true,
-  loopedSlides: 10, // Adjust this value based on the number of slides you have
+  loopedSlides: 4, 
 
   navigation: {
     nextEl: ".swiper-button-next",
@@ -93,14 +93,8 @@ var swiper = new Swiper(".portfolio__container", {
 
 setInterval(() => {
   swiper.slideNext();
-}, 4000); // Automatic scroll every 5 seconds
+}, 10000); // Automatic scroll every 5 seconds
 
-// Infinite scroll: Load more items when scrolling to the bottom
-window.addEventListener('scroll', () => {
-  if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
-    fetchPortfolioItems();
-  }
-});
 
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
@@ -130,7 +124,6 @@ window.addEventListener("scroll", scrollActive);
 /*==================== CHANGE BACKGROUND HEADER ====================*/
 function scrollHeader() {
   const nav = document.getElementById("header");
-  // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
   if (this.scrollY >= 80) nav.classList.add("scroll-header");
   else nav.classList.remove("scroll-header");
 }
@@ -139,7 +132,6 @@ window.addEventListener("scroll", scrollHeader);
 /*==================== SHOW SCROLL up ====================*/
 function scrollUp() {
   const scrollUp = document.getElementById("scroll-up");
-  // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
   if (this.scrollY >= 560) scrollUp.classList.add("show-scroll");
   else scrollUp.classList.remove("show-scroll");
 }
