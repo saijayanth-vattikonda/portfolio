@@ -892,8 +892,9 @@ img {
 }
 
 .experience .content .desc p {
-  font-size: 1.2rem;
-  line-height: 1.6; 
+  font-size: 1.1rem;
+  line-height: 1.2; 
+  color: black;
 }
 @media screen and (max-width: 768px) {
   .experience .container {
