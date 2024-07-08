@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
 
-
 /*================ VARIABLES CSS ==========*/
 
 :root {
@@ -141,7 +140,7 @@ h4 {
 ul {
   list-style: disc;
 }
-ol{
+ol {
   list-style: none;
 }
 a {
@@ -510,7 +509,7 @@ img {
 }
 
 .skills .container .bar .info i {
-  font-size: 3rem; 
+  font-size: 3rem;
 }
 
 .skills .container .bar .info span {
@@ -543,7 +542,7 @@ img {
   }
 
   .skills .container .bar .info span {
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
   }
 }
 
@@ -557,14 +556,13 @@ img {
   }
 
   .skills .container .bar .info i {
-    font-size: 2rem; 
+    font-size: 2rem;
   }
 
   .skills .container .bar .info span {
-    font-size: 1rem; 
+    font-size: 1rem;
   }
 }
-
 
 /* skills media queries ends*/
 /* skills section ends */
@@ -722,7 +720,7 @@ img {
 
 /*================== Portfolio ==================*/
 
-.portfolio__container { 
+.portfolio__container {
   overflow: initial;
 }
 
@@ -803,7 +801,7 @@ img {
 }
 
 .experience .container {
-  padding: 2px 30px; 
+  padding: 2px 30px;
   position: relative;
   background-color: inherit;
   width: 100%;
@@ -893,9 +891,14 @@ img {
 
 .experience .content .desc p {
   font-size: 1.1rem;
-  line-height: 1.2; 
+  line-height: 1.2;
   color: black;
 }
+
+#experience {
+  margin-top: 50px;
+}
+
 @media screen and (max-width: 768px) {
   .experience .container {
     padding-left: 20px;
@@ -930,11 +933,14 @@ img {
     font-size: 1.5rem;
   }
 
-  .experience .left, .experience .right {
+  .experience .left,
+  .experience .right {
     left: 0;
     width: 100%;
     text-align: center;
     padding: 0;
+    margin-bottom: 30px;
+    margin-left: 15px;
   }
 
   .experience .left::before,
@@ -946,9 +952,15 @@ img {
     border-color: #f68c09 transparent transparent transparent;
   }
 
+  .experience .left::after {
+    left: -31px;
+  }
+
   .experience .right::after {
-    left: 50%;
-    transform: translateX(-50%);
+    left: -31px;
+  }
+  .experience .content .tag {
+    padding-left: 0px;
   }
 }
 
@@ -974,7 +986,6 @@ img {
     font-size: 0.9rem;
   }
 }
-
 
 /* Experience Ends Here */
 /*================ Contact Me ===============*/
